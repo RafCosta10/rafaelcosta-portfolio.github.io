@@ -1,0 +1,131 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\textbullet, itemsep=2pt, parsep=0pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
+\begin{document}
+	
+	%----------HEADING----------
+	\begin{center}
+		{\Huge \scshape Rafael Costa} \\ \vspace{1pt}
+		\small Waterloo, ON $|$ 
+		\href{https://linkedin.com/in/rafaelcosta05}{linkedin.com/in/rafaelcosta05} $|$
+		\href{https://github.com/RafCosta10}{github.com/RafCosta10}
+	\end{center}
+	
+	%-----------EDUCATION-----------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Queen's University}{Kingston, ON}
+	{B.A.Sc. Electrical Engineering (Innovation Stream), GPA: 4.0}{Sept. 2023 -- Present}
+	\resumeItemListStart
+	\resumeItem{Dean's List (2023, 2024, 2025)}
+	\resumeItem{Relevant Coursework: Signal Processing, Computer Architecture, Electronics, Electric Machines, Solid-State Devices}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+	
+	%-----------EXPERIENCE-----------
+	\section{Professional Experience}
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{Geotab}{Oakville, ON}
+	{Hardware Reliability \& Sustaining Intern}{May 2026 -- Present}
+	\resumeItemListStart
+	\resumeItem{Diagnosed a previously unknown MCU cold-boot bug during low-temperature reliability testing of a large production batch; root-caused via serial-log analysis, enabling the firmware team to recover all affected devices.}
+	\resumeItem{Automated firmware smoke, FOTA, and long-term soak testing using Python and Raspberry Pi relay-controlled power cycling, eliminating manual test steps and gating GitLab CI releases; demoed to engineering leadership.}
+	\resumeItem{Led multi-phase validation (smoke, FOTA, long-term soak) across multiple firmware releases for a telematics device, uncovering a critical regression and verifying firmware rollback-protection worked as intended.}
+	\resumeItem{Designed a multi-pin pogo-pin test breakout board in Altium Designer with ESD protection; validated cellular modem firmware variants via AT commands and FOTA updates.}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Queen's University, Dept. of Physics}{Kingston/Timmins, ON}
+	{Research Assistant -- BVEX Interferometry Experiment}{Summer 2025}
+	\resumeItemListStart
+	\resumeItem{Designed and implemented power distribution, heater control, and position-tracking systems (LabJack T7, relay boards, accelerometers, gyroscopes, Raspberry Pi 5 at 1~kHz), validated through thermal-vacuum testing and a field campaign.}
+	\resumeItem{Programmed multithreaded C code with UDP servers to control relays, collect telemetry, and regulate system temperatures within $\pm 2^\circ\mathrm{C}$.}
+	\resumeItem{Collaborated with Canadian and French Space Agency engineers during a balloon launch campaign, successfully deploying electronics that operated reliably at 15~km altitude; co-authored 2 \textbf{SPIE} conference papers on the telescope and RFSoC backend.}
+	
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	%-----------PROJECTS-----------
+	\section{Projects}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Autonomous RC Car}{Kingston, ON}
+	{Control \& Navigation Lead}{Winter 2026}
+	\resumeItemListStart
+	\resumeItem{Developed control and perception software (ZeroMQ publish-subscribe architecture) for a 4-person team building a PiCar-X autonomous taxi, implementing PID lane-keeping and Coral TPU-guided trajectory following for camera-guided turns.}
+	\resumeItem{Integrated camera, grayscale, and ultrasonic sensors with GPIO-controlled turn signals and brake lights to achieve autonomous lane following, obstacle avoidance, and dynamic pickup/drop-off routing.}
+	\resumeItem{Designed a mission state machine to manage high-level driving behavior, with a pivot-turn fallback mode for camera-guidance loss to improve robustness across the test course.}
+	\resumeItemListEnd
+	\resumeSubheading
+	{Smith Hyperloop -- Tunnel Boring Machine}{Kingston, ON}
+	{Electrical Team Manager}{June 2025 -- April 2026}
+	\resumeItemListStart
+	\resumeItem{Leading design and testing of TBM electrical systems (power distribution, navigation controls), enabling reliable integration for an international tunneling competition.}
+	\resumeItem{Coordinating subteam deliverables across mechanical, software, and electrical groups to ensure system integration under tight deadlines.}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	%-----------SKILLS-----------
+	\section{Skills}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{
+				\textbf{Hardware \& EDA:}{ Altium Designer, KiCad, LTSpice, SolidWorks, Propel PLM, Quartus II, PCB Design, Schematics} \\
+				\textbf{Embedded Systems:}{ UART, SPI, I2C, USB, SWD, Cellular (AT Commands, FOTA), CAN/Telematics, Raspberry Pi} \\
+				\textbf{Programming \& DevOps:}{ C/C++, Python (NumPy, Pandas, Streamlit), VHDL, Bash, Git, GitLab CI/CD, Linux} \\
+				\textbf{Testing \& Lab:}{ Environmental Stress Screening (ESS, SAE J1455), Oscilloscopes, DMMs, Transient Generators}
+		}}
+	\end{itemize}
+	
+\end{document}

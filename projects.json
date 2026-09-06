@@ -1,0 +1,514 @@
+{
+  "engineering": [
+    {
+      "id": "bvex",
+      "title": "BVEX \u2014 Balloon-Borne Very-Small-Baseline Interferometer",
+      "tags": [
+        "C",
+        "LabJack T7",
+        "Raspberry Pi 5",
+        "UDP",
+        "Multithreading"
+      ],
+      "role": "Electronics & Software Lead \u00b7 Queen's Physics \u00b7 Summer 2025",
+      "cover": {
+        "src": "assets/img/bvex/launch_site.jpg",
+        "alt": "Stratospheric balloon being inflated on the Timmins runway at sunset, with the BVEX payload gondola visible"
+      },
+      "description": [
+        "Designed and built the electronics systems for a balloon-borne radio telescope that flew to 15 km altitude during a CSA/CNES campaign in Timmins, Ontario. Responsible for power distribution, thermal regulation, and inertial position tracking using LabJack T7 DAQs, relay boards, accelerometers, gyroscopes, and Raspberry Pi 5.",
+        "Wrote multithreaded C software with UDP servers to control relays, stream telemetry at 1 kHz, and maintain payload temperature within \u00b12\u00b0C. Co-authored two SPIE conference papers on the telescope design and its RFSoC digital backend."
+      ],
+      "gallery": [
+        {
+          "src": "assets/img/bvex/bvex_02.jpg",
+          "alt": "BVEX telescope assembly at the CNES/CSA launch base in Timmins at sunset, with dish and electronics boxes visible"
+        },
+        {
+          "src": "assets/img/bvex/bvex_03.jpg",
+          "alt": "Rafael at the launch site wearing hi-vis vest and hard hat, standing in front of the inflated balloon"
+        },
+        {
+          "src": "assets/img/bvex/bvex_screenshot_03.png",
+          "alt": "Top-down view of two electronics enclosures showing relay boards, LabJack T7 DAQs, and Raspberry Pis"
+        },
+        {
+          "src": "assets/img/bvex/bvex_screenshot_01.png",
+          "alt": "Interior of BVEX electronics enclosure \u2014 LabJack T7, relay boards, and wiring harness"
+        },
+        {
+          "src": "assets/img/bvex/bvex_screenshot_02.png",
+          "alt": "Data analysis plots showing accelerometer position drift and gyroscope attitude drift probability distributions",
+          "wide": true
+        }
+      ],
+      "docs": [],
+      "links": [
+        {
+          "label": "queensu.ca/bvex",
+          "url": "https://www.queensu.ca/bvex/"
+        },
+        {
+          "label": "CTV News Coverage",
+          "url": "https://www.ctvnews.ca/northern-ontario/article/space-agency-launches-experiments-into-the-timmins-stratosphere/"
+        },
+        {
+          "label": "SPIE Paper: Position Tracking",
+          "url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14153/3101054/The-balloonborne-VLBI-experiment-BVEX-radio-telescope-and-position-tracking/10.1117/12.3101054.full"
+        },
+        {
+          "label": "SPIE Paper: RFSoC Backend",
+          "url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14153/141530Z/An-RFSoC-based-backend-and-timing-system-for-the-balloonborne/10.1117/12.3101053.full"
+        }
+      ]
+    },
+    {
+      "id": "picar",
+      "title": "Autonomous RC Car \u2014 \"Town of Quackston\"",
+      "tags": [
+        "ZeroMQ",
+        "Python",
+        "PID control",
+        "Coral TPU",
+        "Raspberry Pi"
+      ],
+      "role": "Control & Navigation Lead \u00b7 4-person team \u00b7 Winter 2026",
+      "cover": {
+        "src": "assets/img/picar/team_competition.jpg",
+        "alt": "Team of four holding the PiCar-X at the Quackston competition, with the course map displayed behind them"
+      },
+      "description": [
+        "Built a PiCar-X into an autonomous taxi that could keep its lane, take turns, stop, and signal, while navigating a simulated city block to pick up and drop off passengers for fares.",
+        "Owned the control subsystem: a hand-tuned PID controller for lane-keeping, plus a Coral TPU-assisted trajectory follower using a bicycle steering model for camera-guided turns, with a pivot-turn fallback whenever camera guidance was lost.",
+        "Designed the mission state machine governing high-level driving behaviour and wired turn signals and brake lights over GPIO. Subsystems communicated over a ZeroMQ publish\u2013subscribe architecture shared with the perception and planning teams."
+      ],
+      "gallery": [
+        {
+          "src": "assets/img/picar/car_closeup.jpg",
+          "alt": "Close-up of the PiCar-X on a desk, showing the cardboard body, ultrasonic sensor, and Raspberry Pi"
+        },
+        {
+          "src": "assets/img/picar/car_lab.jpg",
+          "alt": "PiCar-X driving on the test course with white lane markings and green intersection tape"
+        },
+        {
+          "src": "assets/img/picar/system_diagnostics.png",
+          "alt": "System diagnostics \u2014 FFT oscillation analysis and steering vs. error linearity check plots",
+          "wide": true
+        },
+        {
+          "src": "assets/img/picar/pid_tuner.png",
+          "alt": "PID tuner step response plot showing tuned reference tracking with minimal overshoot"
+        },
+        {
+          "src": "assets/img/picar/extra_pic.png",
+          "alt": "PiCar extra view"
+        }
+      ],
+      "videos": [
+        {
+          "src": "assets/img/picar/demo_01.mp4",
+          "type": "video/mp4"
+        },
+        {
+          "src": "assets/img/picar/demo_02.mp4",
+          "type": "video/mp4"
+        }
+      ],
+      "docs": [
+        {
+          "label": "Final Design Report (PDF)",
+          "url": "assets/docs/ELEC392_Final_Report.pdf"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/RafCosta10/AutonomousRC"
+        }
+      ]
+    },
+    {
+      "id": "hyperloop",
+      "title": "Smith Hyperloop \u2014 Tunnel Boring Machine",
+      "tags": [
+        "Power distribution",
+        "Safety systems",
+        "RS-485",
+        "VFDs",
+        "Team leadership"
+      ],
+      "role": "Electrical Team Manager \u00b7 June 2025 \u2013 Apr 2026",
+      "cover": {
+        "src": "assets/img/hyperloop/hyperloop_main.jpg",
+        "alt": "Smith Hyperloop Tunnel Boring Machine Team"
+      },
+      "description": [
+        "Led the electrical team designing and testing power distribution and navigation-control systems for a tunnel boring machine built for an international tunnelling competition. Designed four electrical subsystems: a 480 VAC three-phase power path with fused disconnect, dual contactors, and VFD-driven cutter motor; a 120 VAC auger motor branch; a dual-channel safety relay system with E-stop; and a Teensy/Raspberry Pi embedded controls platform with isolated ADC current sensing and RS-485 VFD communication.",
+        "Coordinated deliverables across the mechanical, software, and electrical subteams to keep integration on track under competition deadlines."
+      ],
+      "gallery": [
+        {
+          "src": "assets/img/hyperloop/schematic_comms.png",
+          "alt": "Block diagram of the TBM communications and control system"
+        },
+        {
+          "src": "assets/img/hyperloop/schematic_safety.png",
+          "alt": "Safety system block diagram \u2014 dual-channel E-stop with safety relay, contactor feedback loop, and STO outputs to VFDs"
+        },
+        {
+          "src": "assets/img/hyperloop/schematic_120v.png",
+          "alt": "120 VAC single-phase power distribution \u2014 MCB, EMI filter, AC-DC supply, auger VFD, and grounding bar"
+        },
+        {
+          "src": "assets/img/hyperloop/schematic_480v.png",
+          "alt": "480 VAC three-phase power distribution \u2014 fused disconnect, dual contactors with NC aux, cutter VFD, and cutter motor"
+        }
+      ],
+      "docs": [
+        {
+          "label": "Final Design Package (PDF)",
+          "url": "assets/docs/Hyperloop_FinalDesignPackage.pdf"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "amplifier",
+      "title": "BJT Amplifier PCB",
+      "tags": [
+        "KiCad",
+        "PCB Design",
+        "BJT",
+        "Analog Electronics"
+      ],
+      "role": "Electronics 2 (ELEC 353) \u00b7 Queen's University \u00b7 Fall 2025",
+      "cover": {
+        "src": "assets/img/amplifier/pcb_assembled.jpg",
+        "alt": "Assembled amplifier PCB on a breadboard with soldered components, connected to lab test equipment"
+      },
+      "description": [
+        "Designed a common-emitter BJT amplifier from schematic through PCB layout in KiCad, including biasing resistors, coupling/bypass capacitors, and a potentiometer for gain adjustment. Fabricated the board in the university lab and verified amplifier gain and frequency response on a Tektronix oscilloscope."
+      ],
+      "gallery": [
+        {
+          "src": "assets/img/amplifier/amplifier_screenshot.png",
+          "alt": "KiCad schematic of the common-emitter BJT amplifier with biasing network and coupling capacitors"
+        },
+        {
+          "src": "assets/img/amplifier/layout.png",
+          "alt": "KiCad PCB layout showing copper traces on front and back layers with component footprints"
+        },
+        {
+          "src": "assets/img/amplifier/schematic.png",
+          "alt": "3D render of the amplifier PCB from KiCad showing component placement and through-hole pads"
+        },
+        {
+          "src": "assets/img/amplifier/pcb_front.jpg",
+          "alt": "Tektronix TDS 2001C oscilloscope showing 13 kHz amplified sinusoidal output at 282 mV peak-to-peak"
+        }
+      ],
+      "docs": [
+        {
+          "label": "Lab Report (PDF)",
+          "url": "assets/docs/Amplifier_PCB_Lab_Report.pdf"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "mosfet",
+      "title": "MOSFET Device Design & Simulation",
+      "tags": [
+        "MOSFET design",
+        "TCAD simulation",
+        "Device physics"
+      ],
+      "role": "Solid-State Devices (ENPH 336) \u00b7 Queen's University \u00b7 Winter 2026",
+      "cover": {
+        "src": "assets/img/mosfet/mosfet_pic.png",
+        "alt": "MOSFET Design and Simulation"
+      },
+      "description": [
+        "Designed an n-channel MOSFET from the ground up in a solid-state devices course, selecting doping profiles, oxide thickness, and channel dimensions to meet target threshold voltage and drive current specifications. Simulated all device parameters and produced a professional datasheet with I-V characteristics, capacitance curves, and process parameters."
+      ],
+      "gallery": [
+        {
+          "src": "assets/img/mosfet/mosfet_2.png",
+          "alt": "MOSFET Simulation View 2"
+        },
+        {
+          "src": "assets/img/mosfet/mosfet_3.png",
+          "alt": "MOSFET Simulation View 3"
+        }
+      ],
+      "docs": [
+        {
+          "label": "Design Report (PDF)",
+          "url": "assets/docs/MOSFET_Design_Report.pdf"
+        },
+        {
+          "label": "Simulated Datasheet (PDF)",
+          "url": "assets/docs/MOSFET_Datasheet.pdf"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "ml-classifier",
+      "title": "Walking vs. Jumping ML Classifier",
+      "tags": [
+        "Python",
+        "scikit-learn",
+        "Signal Processing",
+        "Machine Learning"
+      ],
+      "role": "Data Science (ELEC 292) \u00b7 Queen's University \u00b7 Winter 2025",
+      "cover": {
+        "src": "assets/img/ml/ml_pic1.png",
+        "alt": "Machine Learning Classification output"
+      },
+      "description": [
+        "Built a machine learning model to classify accelerometer data as walking or jumping using feature extraction (FFT, RMS, peak frequency) and scikit-learn classifiers. Collected real sensor data, trained and evaluated multiple models, and documented the full pipeline from data collection through cross-validated accuracy analysis."
+      ],
+      "gallery": [
+        {
+          "src": "assets/img/ml/ml_pic2.png",
+          "alt": "Confusion matrix for the classifier"
+        },
+        {
+          "src": "assets/img/ml/ml_pic3.png",
+          "alt": "Data processing and feature extraction plots"
+        }
+      ],
+      "docs": [
+        {
+          "label": "Project Report (PDF)",
+          "url": "assets/docs/ELEC292_ML_Report.pdf"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/RafCosta10/Walking-Jumping_Machine_Learning_Recognition"
+        }
+      ]
+    },
+    {
+      "id": "student-card",
+      "title": "Digital Student Card System",
+      "tags": [
+        "Java",
+        "Java Swing",
+        "QR Scanner",
+        "Systems Design",
+        "Encryption"
+      ],
+      "role": "APSC 103 \u00b7 Queen's University \u00b7 Winter 2024",
+      "cover": {
+        "src": "assets/img/student_card/prototype_setup.png",
+        "alt": "Digital student card prototype setup with smartphone running digital pass in Apple Wallet, USB QR scanner, and Java desktop portal"
+      },
+      "description": [
+        "Developed a digital student card system for Queen's University designed to replace physical plastic cards, enabling students to seamlessly use their smartphone for dining hall meals, TAMs (Trade A Meal), Flex dollars, and athletics facility (ARC) access.",
+        "Engineered a fully functional prototype comprising a Java Swing desktop front-end, CSV database, and dedicated hardware QR scanner for rapid student identification and transaction authorization.",
+        "Implemented secure data handling, encryption protocols, and input validation logic while adhering to a $100 prototype budget constraint and outlining a complete full-scale campus implementation plan."
+      ],
+      "gallery": [
+        {
+          "src": "assets/img/student_card/portal_ui.png",
+          "alt": "Queen's ID Portal desktop interface showing student profile, photo, meal swipes remaining, and transaction controls"
+        },
+        {
+          "src": "assets/img/student_card/login_mockup.png",
+          "alt": "Queen's student card application login interface mockup with university branding"
+        }
+      ],
+      "docs": [
+        {
+          "label": "Final Design Report (PDF)",
+          "url": "assets/docs/Digital_Student_Card_Report.pdf"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "smart-bike-helmet",
+      "title": "Smart Bike Helmet (SBH)",
+      "tags": [
+        "Arduino",
+        "Sensor fusion",
+        "Embedded C",
+        "Web server"
+      ],
+      "role": "Team of 5 \u00b7 Winter 2025",
+      "cover": {
+        "src": "assets/img/sbh/helmet1.jpg",
+        "alt": "Smart Bike Helmet"
+      },
+      "description": [
+        "Designed a helmet that improves cyclist safety with crash detection (accelerometer and force sensors), obstacle-distance alerts, and a nighttime visibility lighting system.",
+        "Coordinated the sensors over software serial on an Arduino microcontroller and pushed live data to a web server for remote monitoring."
+      ],
+      "gallery": [
+        {
+          "src": "assets/img/sbh/helmet2.jpg",
+          "alt": "Smart Bike Helmet side view"
+        }
+      ],
+      "docs": [
+        {
+          "label": "Project Report (PDF)",
+          "url": "assets/docs/SBH_Report.pdf"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "qmind",
+      "title": "Generative Music AI's $350M Problem",
+      "tags": [
+        "AI ethics",
+        "Copyright policy",
+        "Research"
+      ],
+      "role": "QMIND AI Ethics Team \u00b7 Oct 2024 \u2013 May 2025",
+      "cover": {
+        "src": "assets/img/qmind/qmind_pic.png",
+        "alt": "Generative Music AI's $350M Problem Presentation"
+      },
+      "description": [
+        "Researched how generative AI reshapes copyright and creator compensation in the music industry as part of a 5-person QMIND research team, evaluating federated learning, digital watermarking, and audio fingerprinting as possible safeguards.",
+        "Co-authored the resulting paper and presented findings at CUCAI, Canada's largest undergraduate AI conference."
+      ],
+      "gallery": [],
+      "docs": [
+        {
+          "label": "CUCAI 2025 Paper (PDF)",
+          "url": "assets/docs/CUCAI2025_Proceedings.pdf"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "fluid-dispenser",
+      "title": "Automated Fluid Dispenser",
+      "tags": [
+        "Arduino",
+        "SolidWorks",
+        "Mechatronics"
+      ],
+      "role": "Project Lead \u00b7 Fall 2023",
+      "cover": {
+        "src": "assets/img/dispenser/cover.png",
+        "alt": "Automated Fluid Dispenser"
+      },
+      "description": [
+        "Led a 12-week build of an automated fluid dispenser, combining Arduino programming, electrical integration, and SolidWorks modelling, with full engineering reports at each project phase."
+      ],
+      "gallery": [
+        {
+          "src": "assets/img/dispenser/pic1.png",
+          "alt": "Fluid Dispenser SolidWorks Assembly"
+        },
+        {
+          "src": "assets/img/dispenser/pic2.png",
+          "alt": "Fluid Dispenser Detail View"
+        }
+      ],
+      "docs": [
+        {
+          "label": "Final Report (PDF)",
+          "url": "assets/docs/Fluid_Dispenser_Report.pdf"
+        }
+      ],
+      "links": []
+    }
+  ],
+  "personal": [
+    {
+      "id": "audio-visualizer",
+      "title": "Audio Visualizer",
+      "tags": [
+        "Python",
+        "NumPy",
+        "FFT",
+        "Visualization"
+      ],
+      "description": "Real-time audio frequency spectrum visualizer built with Python, using FFT to decompose audio input and render animated frequency bars.",
+      "video": {
+        "src": "assets/img/audio_visualizer/audio_visualizer.mp4",
+        "type": "video/mp4",
+        "poster": "assets/img/audio_visualizer/poster.jpg"
+      },
+      "gallery": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/RafCosta10/audio_visualizer"
+        }
+      ]
+    },
+    {
+      "id": "asteroids",
+      "title": "Asteroids",
+      "tags": [
+        "Python",
+        "Pygame",
+        "Game development"
+      ],
+      "description": "Classic Asteroids arcade game remake in Python using Pygame, with collision detection, particle effects, and progressive difficulty.",
+      "video": {
+        "src": "assets/img/asteroids/asteroids.mp4",
+        "type": "video/mp4",
+        "poster": "assets/img/asteroids/poster.jpg"
+      },
+      "gallery": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/RafCosta10/asteroids"
+        }
+      ]
+    },
+    {
+      "id": "mini-games",
+      "title": "Mini Games Collection",
+      "tags": [
+        "Python",
+        "Pygame",
+        "Game collection"
+      ],
+      "description": "A collection of small games built as programming exercises \u2014 exploring game loops, input handling, and rendering.",
+      "video": null,
+      "gallery": [
+        {
+          "src": "assets/img/games/games_1.png",
+          "alt": "Game Screenshot 1"
+        },
+        {
+          "src": "assets/img/games/games_2.png",
+          "alt": "Game Screenshot 2"
+        },
+        {
+          "src": "assets/img/games/games_3.png",
+          "alt": "Game Screenshot 3"
+        },
+        {
+          "src": "assets/img/games/games_4.png",
+          "alt": "Game Screenshot 4"
+        },
+        {
+          "src": "assets/img/games/games_5.png",
+          "alt": "Game Screenshot 5"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/RafCosta10/games"
+        }
+      ]
+    }
+  ]
+}
