@@ -196,7 +196,7 @@ function renderEngineeringCard(project) {
 
   // Videos
   const videosHtml = project.videos && project.videos.length
-    ? `<div class="video-wrap">${project.videos.map(v => `<video controls preload="metadata"${v.poster ? ` poster="${v.poster}"` : ''}><source src="${v.src}" type="${v.type || 'video/mp4'}"></video>`).join('')}</div>`
+    ? `<div class="video-wrap">${project.videos.map(v => `<video controls preload="none"${v.poster ? ` poster="${v.poster}"` : ''}><source src="${v.src}" type="${v.type || 'video/mp4'}"></video>`).join('')}</div>`
     : '';
 
   // Document downloads / previews
@@ -244,7 +244,7 @@ function renderPersonalCard(project) {
   if (project.video && project.video.src) {
     videoHtml = `
       <div class="video-wrap">
-        <video controls preload="metadata"${project.video.poster ? ` poster="${project.video.poster}"` : ''}>
+        <video controls preload="none"${project.video.poster ? ` poster="${project.video.poster}"` : ''}>
           <source src="${project.video.src}" type="${project.video.type || 'video/mp4'}">
         </video>
       </div>`;
