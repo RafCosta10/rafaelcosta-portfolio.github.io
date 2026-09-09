@@ -430,12 +430,11 @@
       "id": "audio-visualizer",
       "title": "Audio Visualizer",
       "tags": [
-        "Python",
-        "NumPy",
+        "Rust",
         "FFT",
         "Visualization"
       ],
-      "description": "Real-time audio frequency spectrum visualizer built with Python, using FFT to decompose audio input and render animated frequency bars.",
+      "description": "Real-time audio frequency spectrum visualizer built with Rust, using FFT to decompose audio input and render animated frequency bars.",
       "video": {
         "src": "assets/img/audio_visualizer/audio_visualizer.mp4",
         "type": "video/mp4",
@@ -457,7 +456,7 @@
         "Pygame",
         "Game development"
       ],
-      "description": "Classic Asteroids arcade game remake in Python using Pygame, with collision detection, particle effects, and progressive difficulty.",
+      "description": "Classic Asteroids arcade game remake in Python using Pygame, with collision detection and particle effects.",
       "video": {
         "src": "assets/img/asteroids/asteroids.mp4",
         "type": "video/mp4",
@@ -479,7 +478,7 @@
         "Pygame",
         "Game collection"
       ],
-      "description": "A collection of small games built as programming exercises \u2014 exploring game loops, input handling, and rendering.",
+      "description": "A collection of small games built as programming exercises in Java\u2014 exploring game loops, input handling, and rendering.",
       "video": null,
       "gallery": [
         {
